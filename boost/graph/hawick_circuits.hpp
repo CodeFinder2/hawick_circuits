@@ -285,7 +285,7 @@ template <
     typename Graph, typename Visitor, typename VertexIndexMap
 >
 void call_hawick_circuits(Graph const& graph,
-                          Visitor /* by value */ visitor,
+                          Visitor& visitor,
                           VertexIndexMap const& vertex_index_map) {
     typedef graph_traits<Graph> Traits;
     typedef typename Traits::vertex_descriptor Vertex;
